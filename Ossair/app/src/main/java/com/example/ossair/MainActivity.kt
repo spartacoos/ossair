@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
                                     .fillMaxWidth()
                                     .padding(16.dp)
                             ) {
-                                Text(text = it.dataFirst, fontSize = 30.sp, color = Color.Green)
+                                Text(text = it.dataFirst, fontSize = 30.sp, color = Color.White)
                                 //Spacer(modifier = Modifier.height(4.dp))
                                 Text(text = it.dataSecond, fontSize = 24.sp, color = Color.White)
                             }
@@ -58,6 +58,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     //Greeting("Android")
+                    Greeting("Hiya")
                     Greeting(posts.value.toString())
                     Greeting(HttpRoutes.POSTS)
                 }
@@ -68,7 +69,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+    Text(text = "Hello $name!", color = Color.White)
 }
 
 @Preview(showBackground = true)

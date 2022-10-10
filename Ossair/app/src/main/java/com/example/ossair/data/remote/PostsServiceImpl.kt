@@ -13,7 +13,8 @@ class PostsServiceImpl (
 ): PostsService {
     override suspend fun getPosts(): List<PostResponse> {
         return try {
-            client.get("http://192.168.1.212")
+            //client.get("http://192.168.1.212")
+            client.get("http://192.168.1.147")
             //client.get{
             //println("HEREEEEEE: ${url(HttpRoutes.POSTS)}")
             //url(HttpRoutes.POSTS)
