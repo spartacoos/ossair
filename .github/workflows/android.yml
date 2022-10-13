@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: Go to the correct folder within the repository
-      run: cd Ossair/
+      run: pwd && ls -la && cd Ossair && ls -la && chmod +x ./gradlew
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
