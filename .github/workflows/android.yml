@@ -20,9 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Go to the correct folder within the repository
-      run: pwd && ls -la && cd Ossair && ls -la
     - name: Grant execute permission for gradlew
-      run: chmod +x ./gradlew
+      run: pwd && ls -la && cd Ossair && ls -la && chmod +x ./gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: pwd && ls -la && cd Ossair && ls -la && ./gradlew build
